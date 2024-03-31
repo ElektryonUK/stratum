@@ -650,9 +650,6 @@ bool client_submit_res(YAAMP_CLIENT *client, json_value *json_params)
 	YAAMP_JOB_VALUES submitvalues;
 	memset(&submitvalues, 0, sizeof(submitvalues));
 
-	// (!!!)
-        build_submit_values_res(&submitvalues, templ, client->extranonce1, extranonce2, ntime, nonce);
-
 	// minimum hash diff begins with 0000, for all...
 	uint8_t pfx = submitvalues.hash_bin[31];
 	if(0 && pfx) {
