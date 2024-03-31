@@ -21,7 +21,7 @@ make
 ```
 sudo mv stratum /home/yiimp-data/yiimp/site/stratum/stratum_full
 ```
-* Move stratum file
+* Move stratum file (msy2008 Yiimp Installer : https://github.com/msy2008/yiimp_install_scrypt)
 ```
 sudo mv stratum /var/stratum/stratum_full
 ```
@@ -30,7 +30,7 @@ sudo mv stratum /var/stratum/stratum_full
 ```
 sudo vim /home/yiimp-data/yiimp/site/stratum/config/run.sh
 ```
-* After run addport modify run.sh with stratum_ful
+* After run addport modify run.sh with stratum_ful (msy2008 Yiimp Installer : https://github.com/msy2008/yiimp_install_scrypt)
 ```
 sudo vim /var/stratum/config/run.sh
 ```
