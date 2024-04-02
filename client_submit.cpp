@@ -213,7 +213,7 @@ static void client_do_submit(YAAMP_CLIENT *client, YAAMP_JOB *job, YAAMP_JOB_VAL
 			}
 
 			else
-				debuglog("%s %d REJECTED\n", coind_aux->name, coind_aux->height);
+				debuglog("%s %d (+1) REJECTED\n", coind_aux->name, coind_aux->height);
 		}
 	}
 
