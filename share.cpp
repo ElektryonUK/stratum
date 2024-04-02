@@ -296,7 +296,7 @@ bool block_confirm(int coinid, const char *blockhash)
 		{
 			if(strcmp(block->hash1, hash) && strcmp(block->hash2, hash)) continue;
 			if (!block->confirmed) {
-				debuglog("*** CONFIRMED %d (+1) :%s\n", block->height, block->hash2);
+				debuglog("*** CONFIRMED %d : %s\n", block->height, block->hash2);
 				strncpy(block->hash, blockhash, 65);
 				block->confirmed = true;
 			}
