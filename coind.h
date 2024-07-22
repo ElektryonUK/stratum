@@ -9,6 +9,8 @@ struct YAAMP_COIND_AUX
 
 	char hash[1024];
 	char target[1024];
+
+        bool skip_submitblock;
 };
 
 class YAAMP_COIND: public YAAMP_OBJECT
@@ -61,6 +63,7 @@ public:
 	int actual_ttf;
 
 	bool isaux;
+        pthread_mutex_t aux_mutex;
 	YAAMP_COIND_AUX aux;
 
 	int notreportingcounter;
