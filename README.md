@@ -17,20 +17,12 @@ cd ..
 make
 ```
 
-* Move stratum file
-```
-sudo mv stratum /home/yiimp-data/yiimp/site/stratum/stratum_full
-```
 * Move stratum file (msy2008 Yiimp Installer : https://github.com/msy2008/yiimp_install_scrypt)
 ```
 sudo mv stratum /var/stratum/stratum_full
 ```
 
-* After run addport modify run.sh with stratum_full
+* Run as follows: For example, if you use the scrypt algorithm (copy the scrypt.conf file to the stratum folder)
 ```
-sudo vim /home/yiimp-data/yiimp/site/stratum/config/run.sh
-```
-* After run addport modify run.sh with stratum_ful (msy2008 Yiimp Installer : https://github.com/msy2008/yiimp_install_scrypt)
-```
-sudo vim /var/stratum/config/run.sh
+./stratum_full scrypt
 ```
