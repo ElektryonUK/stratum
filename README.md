@@ -1,5 +1,6 @@
-# Stratum for YiiMP
+## Stratum for YiiMP
 with more then 100 algo support
+https://github.com/msy2008/yiimp
 
 ## ▶️ Installation
 
