@@ -663,8 +663,12 @@ void *client_thread(void *p)
 		pthread_exit(NULL);
 	}
 
-	else if(client->sock->total_read == 0)
-		clientlog(client, "no data");
+        // Since the total socket read volume of the mining machines of a small number of miners is 0,  
+        // "no data" logs appear frequently, which in turn affects the normal operation of the mining pool. 
+	// Maybe we can write better code so that each miner user only appears once a day instead of frequently.
+        // Known mining machine Details: bfgminer/5.4.2
+	/*else if(client->sock->total_read == 0)
+		clientlog(client, "no data");*/
 
 	if(client->sock->sock >= 0)
 		shutdown(client->sock->sock, SHUT_RDWR);
