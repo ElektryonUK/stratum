@@ -1215,6 +1215,19 @@ void yespowerSUGAR_hash(const char* input, char* output, uint32_t len)
     yespower_tls(input, 80, &yespower_1_0_sugarchain, (yespower_binary_t *)output);
 }
 
+void power2b_hash(const char* input, char* output, uint32_t len)
+{
+    	yespower_params_t yespower_b2b_power2b = 
+	{
+		.version = YESPOWER_1_0,
+		.N = 2048,
+		.r = 32,
+		.pers = "Now I am become Death, the destroyer of worlds",
+		.perslen = 46 
+    	};
+    	yespower_b2b_tls( input, len, &yespower_b2b_power2b, (yespower_binary_t *)output);
+}
+
 void yespowerURX_hash(const char* input, char* output, uint32_t len)
 {
     yespower_params_t yespower_1_0_uraniumx = {
